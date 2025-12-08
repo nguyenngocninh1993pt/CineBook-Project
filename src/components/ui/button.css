@@ -1,0 +1,96 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* khoảng cách giữa icon/text */
+  border-radius: 0.375rem; /* rounded-md */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Variants */
+.btn-default {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-default:hover {
+  background-color: #1e40af;
+}
+
+.btn-destructive {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-destructive:hover {
+  background-color: #b91c1c;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+.btn-outline:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #111827;
+}
+
+.btn-ghost:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+/* Sizes */
+.btn-default {
+  height: 2.5rem; /* 10 * 0.25rem */
+  padding: 0.5rem 1rem;
+}
+
+.btn-sm {
+  height: 2.25rem; /* 9 * 0.25rem */
+  padding: 0.375rem 0.75rem;
+}
+
+.btn-lg {
+  height: 2.75rem; /* 11 * 0.25rem */
+  padding: 0.5rem 2rem;
+}
+
+.btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}

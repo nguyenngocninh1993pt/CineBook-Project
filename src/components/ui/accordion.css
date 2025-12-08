@@ -1,0 +1,47 @@
+.accordion {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-trigger {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.accordion-trigger:hover {
+  background-color: #f9f9f9;
+}
+
+.accordion-chevron {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.accordion-chevron.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+  max-height: 500px; /* đủ lớn để chứa nội dung */
+}
+
+.accordion-content-inner {
+  padding: 0 1rem 1rem 1rem;
+}

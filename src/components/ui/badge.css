@@ -1,0 +1,45 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  padding: 0.125rem 0.625rem; /* py-0.5 px-2.5 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: default;
+}
+
+/* Variants */
+.badge-default {
+  background-color: #2563eb; /* primary */
+  color: white; /* primary-foreground */
+}
+
+.badge-default:hover {
+  background-color: #1e40af;
+}
+
+.badge-secondary {
+  background-color: #6b7280; /* secondary */
+  color: white;
+}
+
+.badge-secondary:hover {
+  background-color: #4b5563;
+}
+
+.badge-destructive {
+  background-color: #ef4444; /* destructive */
+  color: white;
+}
+
+.badge-destructive:hover {
+  background-color: #b91c1c;
+}
+
+.badge-outline {
+  background-color: transparent;
+  color: #111827; /* foreground */
+  border-color: #d1d5db; /* gray border */
+}

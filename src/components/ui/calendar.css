@@ -1,0 +1,136 @@
+ .calendar {
+  padding: 0.75rem;
+}
+
+/* container months */
+.calendar-months {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media(min-width: 640px) {
+  .calendar-months {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.calendar-month {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calendar-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 0.25rem;
+}
+
+.calendar-caption-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.calendar-nav-button {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.calendar-nav-button:hover {
+  opacity: 1;
+}
+
+.calendar-nav-button-prev {
+  position: absolute;
+  left: 0.25rem;
+}
+
+.calendar-nav-button-next {
+  position: absolute;
+  right: 0.25rem;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-head-row {
+  display: flex;
+}
+
+.calendar-head-cell {
+  font-size: 0.8rem;
+  font-weight: 400;
+  flex: 1;
+  text-align: center;
+  color: #6b7280;
+}
+
+.calendar-row {
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.calendar-cell {
+  width: 2.25rem;
+  height: 2.25rem;
+  text-align: center;
+  position: relative;
+}
+
+.calendar-day {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.calendar-day-selected {
+  background-color: #2563eb;
+  color: white;
+}
+
+.calendar-day-today {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.calendar-day-outside {
+  color: #6b7280;
+  opacity: 0.5;
+}
+
+.calendar-day-disabled {
+  color: #6b7280;
+  opacity: 0.5;
+}
+
+.calendar-icon {
+  width: 1rem;
+  height: 1rem;
+}
