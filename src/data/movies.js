@@ -12,7 +12,7 @@ export const movies = [
     director: "Joaquim Dos Santos",
     cast: ["Shameik Moore", "Hailee Steinfeld", "Oscar Isaac"],
     synopsis: "Miles Morales trở lại trong một cuộc phiêu lưu đa vũ trụ hoành tráng, nơi anh phải đối mặt với một mối đe dọa mới và khám phá ý nghĩa thực sự của việc trở thành người hùng.",
-    trailer: "<iframe width="560" height="315" src="https://www.youtube.com/embed/QOdF1zK4ZkY?si=IupgEt7uWoG4VFyz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>",
+    trailer: "https://www.youtube.com/watch?v=example",
     ageRating: "P",
     language: "Tiếng Anh - Phụ đề Việt",
     status: "now_showing",
